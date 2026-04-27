@@ -30,8 +30,8 @@
 		<section class="w-75 text-center m-auto border pb-3">
 			<form action = "LoginExecute.action" method="post">
 				<div id="wrap_box">
-					<h2 class="h3 mb-3 fw-normal bg-secondary bg-opacity-10 py-2">ログイン</h2>
-					<c:if test="${not empty errors}">
+					<h2 class="h3 mb-3 fw-norma bg-secondary bg-opacity-10 py-2">ログイン</h2>
+					<c:if test="${errors.size()>0}">
 						<div>
 							<ul>
 								<c:forEach var="error" items="${errors}">
